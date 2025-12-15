@@ -1,0 +1,258 @@
+:root {
+  --primary-500: #2d80ff;
+  --primary-600: #1f6ce0;
+  --card-shadow: 0 18px 48px rgba(12, 55, 115, 0.28);
+  --text-muted: #8aa6c2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(145deg, #3e90ff 0%, #0c4b9f 45%, #083b82 100%);
+  color: #0b1c35;
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+a {
+  color: var(--primary-500);
+}
+
+.auth-layout {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 32px;
+}
+
+.auth-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.wave-stripe {
+  position: absolute;
+  width: 160%;
+  height: 16px;
+  left: -20%;
+  border-radius: 999px;
+  opacity: 0.95;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.12));
+  transform: rotate(-6deg);
+}
+
+.wave-1 {
+  top: 12%;
+  background: linear-gradient(90deg, #f8ba6f 0%, #ffe29f 40%, #7ed957 100%);
+}
+
+.wave-2 {
+  top: 32%;
+  background: linear-gradient(90deg, #21c1d6 0%, #6ee7ff 40%, #2b8dfd 100%);
+}
+
+.wave-3 {
+  top: 60%;
+  background: linear-gradient(90deg, #ff8a65 0%, #ffb27f 40%, #93f5a1 100%);
+  height: 14px;
+}
+
+.wave-4 {
+  top: 74%;
+  background: linear-gradient(90deg, #6cd0ff 0%, #4da1ff 55%, #1a5cff 100%);
+  height: 14px;
+  transform: rotate(-9deg);
+}
+
+.wave-footer {
+  position: absolute;
+  bottom: -6%;
+  left: -5%;
+  right: -5%;
+  height: 140px;
+  background: white;
+  border-top-left-radius: 70% 40%;
+  border-top-right-radius: 80% 50%;
+  z-index: 0;
+}
+
+.auth-card {
+  width: 100%;
+  min-width: 500px;
+  max-width: 540px;
+  border-radius: 22px;
+  box-shadow: var(--card-shadow);
+  position: relative;
+  z-index: 2;
+}
+
+.auth-card .ant-card-body {
+  padding: 48px 44px 40px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo-mark {
+  height: 52px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  color: #0c2a5a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.05;
+}
+
+.logo-mark .line1 {
+  font-size: 16px;
+  letter-spacing: 0.18em;
+}
+
+.logo-mark .line2 {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  margin-top: -4px;
+}
+
+.logo-sub {
+  color: #1a1f36;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0c2a5a;
+  margin: 16px 0 14px;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.form-vertical .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.form-vertical .ant-form-item-label > label {
+  color: #6c7b93;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: 18px;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.center-link {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.top-gap {
+  margin-top: 24px;
+}
+
+.muted-link {
+  color: var(--text-muted);
+}
+
+.back-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.button-stack {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.neutral-btn {
+  background: #7f8599 !important;
+  border-color: #7f8599 !important;
+  color: #fff !important;
+}
+
+.outline-primary {
+  border-color: #2d80ff !important;
+  color: #2d80ff !important;
+  background: #f5f8ff !important;
+}
+
+.rounded-input .ant-input,
+.rounded-input .ant-input-affix-wrapper {
+  border-radius: 12px;
+  border-color: #d9e2ef;
+  font-size: 15px;
+}
+
+.rounded-input .ant-input-affix-wrapper-lg {
+  border-radius: 12px;
+}
+
+.rounded-button.ant-btn {
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small-text {
+  font-size: 13px;
+  color: #6c7b93;
+}
+
+.strong-link {
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .auth-card {
+    max-width: 100%;
+  }
+
+  .auth-card .ant-card-body {
+    padding: 24px;
+  }
+}
+
